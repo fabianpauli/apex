@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+    <!-- Peça ao usuário para digitar vários nomes. Exiba na tela todos os nomes digitados, porém de maneira invertida (do último para o primeiro). -->
+    <div>
+      <label >Digite quantidade de números que desejar</label>
+      <input type="text" id="nomes">
+      
+      
+    </div>
+    <button type="button" onclick="inverter()">Inverter</button>
+    
+    <script>
+        
+
+        function inverter(){
+          let nomes = document.getElementById('nomes').value;
+          nomes = nomes.split(',');
+         
+                    
+          for(let i = nomes.length -1; i>= 0; i--){
+            document.write(nomes[i] +  ' ');
+          
+          }
+        }
+
+        
+      </script>
+    
+</body>
+</html>

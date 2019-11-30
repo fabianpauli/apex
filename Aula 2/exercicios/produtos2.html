@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+
+      <div>
+        <label>Nome do Produto</label>
+        <input id="prod-nome" type="text">
+      </div>
+
+      <div>
+        <label >Valor do Produto</label>
+        <input id="prod-val" type="number">
+      </div>
+
+      <button onclick="addItem()" type="button">Adicionar Produto</button>
+    </form>
+    <br>
+    <button onclick="gerarRel()" type="button">Exibir Relatório</button>
+    <br>
+    <br>
+    <div id="container">    </div>
+
+    <script>
+      
+    let produtos = [];
+    let prodName = document.getElementById('prod-nome');
+    let prodVal = document.getElementById('prod-val');
+    let arrHead = [' Nome do Produto', ' Valor '];
+
+    function addItem(){
+      produtos.push({nome: prodName.value, valor: prodVal.value })
+      prodName.value = '';
+      prodVal.value ='';
+      }
+          
+    function gerarRel(){
+    
+      let table = document.createElement("table");
+      table.setAttribute('id', 'prod-table');
+
+      let trh = table.insertRow(-1);
+      for(let i=0; i < arrHead.length; i++){
+        let th = document.createElement("th");
+        th.innerHTML = arrHead[i];
+        trh.appendChild(th);
+      }
+  
+      produtos.forEach(item => {
+        console.log(item.length);
+        let tr = table.insertRow(-1);
+        let td1 = tr.insertCell();
+        let td2 = tr.insertCell();
+        item.valor *= 1.35;
+        td1.appendChild(document.createTextNode(item.nome));
+        td2.appendChild(document.createTextNode("R$ " + item.valor));
+        
+      
+        });
+      document.getElementById("container").appendChild(table)
+      //     console.log('Calcular lucro sob produtos')
+      
+    }
+  
+    </script>
+  </body>
+</html>

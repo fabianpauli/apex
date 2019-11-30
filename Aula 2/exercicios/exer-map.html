@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<script> 
+  let produtos = [
+    {nome: 'produto 01', valor:999.90},
+    {nome: 'produto 02', valor:430.00},
+    {nome: 'produto 03', valor:1999.90},
+    {nome: 'produto 04', valor:2799.70},
+    {nome: 'produto 05', valor:99.90}
+    ]; 
+    // recebe  produto, calcula valor, retorna array com 30% margem de lucro
+    function calcValor(produtos, percLucro){
+      return produtos.map(item => {
+        //cria a propriedade valorfinal e atribui o lucro 
+        item.valorFinal = item.valor * percLucro;
+        //retorna item com nova propriedade
+        return item;
+      });
+    }
+    let produtosRelatorio = calcValor(produtos, .03);
+
+produtosRelatorio.forEach(item => {
+  document.write(`<p><b>${item.nome}: </b>R$ ${item.valorFinal}</p>`);
+});
+
+</script>
+</body>
+</html>

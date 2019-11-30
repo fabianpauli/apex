@@ -1,0 +1,60 @@
+body{
+  padding: 23px;
+  background-color: #dbdbdb;
+
+}
+p{
+  margin: none;
+}
+#nome1 {
+  margin-left: 23px;
+  height: 20px;
+  font-family: TimesNewRomanPSMT;
+  font-size: 18px;
+  line-height: 1.11;
+  color: #f70505;
+}
+#nome2{
+  height: 22px;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.25;
+  color: #288412;
+}
+#nome3{
+  height: 23px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 2;
+  color: #0c32e2;
+}
+
+.title{
+  height: 32px;
+  font-family: Helvetica;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 0.56;
+  text-align: center;
+  color: #3d3d3d;
+}
+
+
+.p1{
+  width: 100%;
+  height: auto;
+  height: 140px;
+  margin-top: 39px;
+  border: solid 3px #f40505;
+  padding: 8px 9px;
+  box-sizing: border-box;
+}
+.p1 p{
+  font-size: 18px;
+  font-family: TimesNewRomanPSMT;
+  text-align: justify;
+  color: #301e1e;
+  text-indent: 48px;
+}

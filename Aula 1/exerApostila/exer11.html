@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+// ****************
+// EXERCICIO 11
+// ****************
+let frase = window.prompt('Digite uma frase');
+//substr precisa inicio e fim
+let part1 = frase.substr(0, parseInt(frase.length / 2));
+let part2 = frase.substr(parseInt(frase.length / 2), frase.length);
+
+document.write('<p>'+ part1 +'</p>');
+document.write('<p>'+ part2 +'</p>')
+
+document.write('<h4>'+ Split +'</h4>')
+let parts = frase.split(' ');
+//in tras cada index do array, of tras o valor da posição
+for(const palavra of parts){
+  document.write(palavra+'<br>');
+}
+</script>
+  
+</body>
+</html>

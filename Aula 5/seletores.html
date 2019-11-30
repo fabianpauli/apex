@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Seletores</title>
+  <style>
+  p{
+    font-size: 30px;;
+  }
+  #nome{
+    color: greenyellow;
+  }
+  .nome{
+    color: hotpink;
+  }
+  p:hover{
+    background-color: indigo;
+  }
+  #nome:hover{
+    background: lightblue;
+  }
+  .nome:hover{
+    
+    background-color: lightseagreen;
+  }
+  input[value='0']{
+    background-color: maroon;
+    font-size: 10px;
+  }
+  input[value='10']{
+    background-color: seagreen;
+  }</style>
+</head>
+<body>
+  <p>Debora</p>
+  <p class="nome">Perdona</p>
+  <p id="nome">Lee</p>
+  <form >
+    <input type="text" value="0">
+    <input type="text" value="10">
+  </form>
+</body>
+</html>

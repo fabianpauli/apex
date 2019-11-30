@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+    <!-- 5 – Crie um programa que entre com os dados de altura e sexo de 5 pessoas. Imprima na tela quantas pessoas são do sexo masculino e quantas pessoas são do sexo feminino. Mostre também qual é a maior altura e se essa altura é de um homem ou uma mulher. -->
+    <form id="form">
+      <div>
+        <label>Informações</label>
+        
+      </div>
+      <div>
+        <label>Nome</label>
+        <input type="text" id="nome" name="nome">
+      </div>
+      <div>
+          <label>Altura</label>
+          <input id="altura" type="text" name="altura">
+        </div>
+        <div>
+          <label >Genero</label>
+          <br>
+          <input type="radio" name="gender" value="male"> Male<br>
+          <input type="radio" name="gender" value="female"> Female<br>
+           
+        </div>
+      <button type="button" onclick="addInfo()">Adicionar</button>
+    </form>
+    <button type="button" onclick="showInfo()">Mostrar Dados</button>
+    <div id="dados">
+
+    </div>
+<script>
+    let pessoas = [];
+    
+
+    function addInfo(){
+      let form = new FormData(document.getElementById('form'));
+      let nomePessoa = form.get('nome');
+     let alturaPessoa = form.get('altura');
+     let genPessoa = form.get('gender');
+      pessoas.push({nome: nomePessoa, altura: alturaPessoa, genero: genPessoa })
+      nome.value = '';
+      altura.value ='';
+      genero = '';
+      console.log(pessoas);
+      }
+      function showInfo(){
+        let male =[];
+        let female =[];
+        let alturaMax = {altura:0};
+        
+      
+        for(let i=0; i< pessoas.length; i++){
+          if(pessoas[i].genero === 'male'){
+            male.push(pessoas[i])
+          } else{
+            female.push(pessoas[i])
+          }
+          parseFloat(pessoas[i].altura);
+          if(parseFloat(pessoas[i].altura) > alturaMax.altura){
+            alturaMax = pessoas[i];
+          }
+          
+        }
+         
+        document.getElementById('dados').innerHTML = `<p> ${male.length} é a quantidade de homens.</p> <br><p> ${female.length} é a quantidade de mulheres.</p> <br><p>${alturaMax.nome}, tem ${alturaMax.altura} é do genero ${alturaMax.genero} e é a pessoa com maior altura</p>`;
+        
+      }
+         </script>
+</body>
+</html>

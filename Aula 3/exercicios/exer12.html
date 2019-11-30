@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let matriz = [
+      [1, 2, 3, 4, 5, 6],
+      [1, 6, 0, 7, 8, 9],
+      [2, 5, 6, 8, 2, 1],
+      [1, 6, 9, 7, 8, 9],
+      [2, 5, 6, 8, 2, 1]
+    ];
+
+    //coluna
+    let impar = 0;
+    for(let i=0; i< matriz.length; i++){
+      //linha
+      for(let j=0; j< matriz[i].length; j++){
+        let item = matriz[i][j];
+        if( item %2 !== 0){
+          impar++;
+         
+        }
+      }
+      
+    }
+    console.log( impar);
+    </script>
+</body>
+</html>

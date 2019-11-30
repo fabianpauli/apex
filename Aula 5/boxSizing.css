@@ -1,0 +1,19 @@
+
+
+
+.box{
+  width: 200px;
+  height: 200px;
+  border: solid 1px red;
+  margin: 20px;
+}
+.content {}
+
+.padding{
+  padding: 5px;
+  box-sizing: padding-box;
+}
+
+.border{
+  box-sizing: border-box;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Formulários</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <style>
+      fieldset{
+        width: 500px;
+      }</style>
+</head>
+<body>
+  <!-- action indica ação a ser processada no servidor, metodo indica forma de envio -->
+  <form action="/testeForm" method="POST">
+    <fieldset>
+      <legend><i class="material-icons">
+          person
+          </i></legend>
+      <label for="nome">Nome</label>
+      <input type="text" name="nome" placeholder="Primeiro nome" required>
+
+      <label for="sobrenome">Sobrenome</label>
+      <input type="text" name="sobrenome" placeholder="Ultimo nome" required>
+      
+      <label for="email">Email</label>
+      <input type="email" name="email" placeholder="Ex. nome@.com" >
+
+      <label for="contribuente">Contribuente?</label>
+      <input type="checkbox" name="emcontribuente">
+      <br>
+      <label for="sexo">Sexo</label>
+      <input type="radio" name="sexo" value="M"><span>Masculino</span>
+      <input type="radio" name="sexo" value="F"><span>Feminino</span>
+    </fieldset>
+    <fieldset>
+      <legend>
+          <i class="material-icons">
+              lock
+              </i>
+      </legend>
+      <input type="password" name="senha" placeholder="Digite sua senha" minlength="5">
+      <input type="password" name="senhaConfirma" placeholder="Digite novamente sua senha">
+    </fieldset>
+    <fieldset>
+      <legend>
+        <i class="material-icons">photo</i></legend>
+      <input type="file" name="foto" accept="image/*">
+    </fieldset>
+    <fieldset>
+      <legend><i class="material-icons">location_city</i></legend>
+      
+      <select name="cidade">
+        <optgroup label="Santa Catarina">
+          <option value="Blumenau">Blumenau</option>
+          <option value="Florianopolis">Florianopolis</option>
+          <option value="Lages">Lages</option>
+        </optgroup>
+        <optgroup label="Rio Grande do Sul">
+          <option value="Porto Alegre" label="Porto Alegre"></option>
+          <option value="Canoas">Canoas</option>
+        </optgroup>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend><i class="material-icons">code</i></legend>
+      <label >Comentários</label><br>
+      <textarea cols="40" rows="10" name="comentarios"></textarea>
+    </fieldset>
+    <button type="reset">Limpar</button>
+    <button type="submit">Enviar</button>
+  </form>
+  <progress id="progress" value="70" max="100">70%</progress>
+</body>
+</html>

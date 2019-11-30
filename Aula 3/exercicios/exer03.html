@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    function calc(){
+      let values = document.getElementById('values').value;
+   
+      if(values){
+        let max = 0;
+        let min = 99;
+        values = values.split(',');
+        values = values.map(item => parseFloat(item));
+        for(let i=0; i< values.length; i++){
+          
+          if(values[i] < min){
+            min = values[i];
+          }
+        }
+
+
+        document.getElementById('result').textContent = min;
+        
+      }
+      }
+
+
+    
+  </script>
+</head>
+<body>
+  <div>
+    <label >Digite 5 numeros</label>
+      <input type="text" id="values">
+  </div>
+  <div>
+    <label>Resultado</label>
+    <label id="result"></label>
+  </div>
+  <button onclick="calc()">Calcular</button>
+</body>
+</html>

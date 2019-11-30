@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Intro</title>
+
+  <script>
+    // 2. Escreva um script que solicite dois números distintos para o  usuário, e em seguida, escreva todos os número entre o intervalo dos números informados
+  //   let num1 = parseInt(window.prompt('Digite um numero'));
+  //   let num2 = parseInt(window.prompt('Digite outro numero'));
+
+  //  function numsInterval(num1, num2){
+  //    for(let i = num1; i < num2; i++){
+  //      document.write('<h4>' + i + '</h4>')
+     
+  //    }
+  //  }
+  // let nums = numsInterval(num1, num2);
+// **************** 
+// EXERCICIO 3
+// ****************
+// Escreva todos os números pares entre o número 101 e o número 200. 
+// for(let i = 101; i< 200; i++){
+//   if(i % 2 === 0){
+//     console.log(i);
+//     document.write('<h5>'+ i +'</h5>')
+//   }
+// }
+// ****************
+// EXERCICIO 4
+// ****************
+// 4. Escreva um script que solicite um número ao usuário e em seguida escreva o valor do número informado multiplicado por 5. O script deve continuar solicitando novos números até que o usuário digite um número negativo
+// let num = parseInt(window.prompt('Digite um numero'));
+
+// while(num > 0){
+//   document.write('<h5>' + num * 5 + '</h5>');
+//   num = parseInt(window.prompt('Digite um numero'));
+// }
+// ****************
+// EXERCICIO 6
+// ****************
+// 6. Escreva um script que mostre na tela o desenho abaixo: 
+//    X 
+//    XX 
+//    XXX 
+//   XXXX 
+//   XXXXX
+// let i,j;
+// //numero de linhas
+//  for(i=1; i <= 5; i++){
+//    //numero de estrelas por linhas
+//   for(j=1; j<=i; j++){
+//     document.write('X');
+//   }
+//    document.write('<br />');
+//   }
+
+// ****************
+// EXERCICIO 8
+// ****************
+// Escreva um script que calcule e escreva o resultado da soma dos números entre
+
+// let str ='';
+// for(let i=1; i<=50; i++){
+//   str = str + i;
+//   if(i < 50){
+//     str = str + '+';
+//   }
+// }
+// document.write('<h1>'+str+'</h1>');
+// document.write('<p>Resultado:'+eval(str)+'</p>')
+
+// ****************
+// EXERCICIO 10
+// ****************
+// let text = window.prompt('Digite uma palavra');
+// for(let i=0; i<text.length; i++){
+//   document.writeln(text + '<br/>')
+// }
+
+
+
+// ****************
+// EXERCICIO 13
+// ****************
+// let text='';
+// for (let i = 0; i < 5; i++) {
+//   let palavra = window.prompt(i+ ' - Digite uma palavra');
+//   text = text + palavra;
+//   if(i<4){
+//     text = text + ' - ';
+//   }
+// }
+// document.write('<h4>' + text + '</h4>');
+// ****************
+// EXERCICIO 15
+// ****************
+// Escreva um script que solicite o nome de um dos três países com mais títulos da
+// copa do mundo, em seguida escreva uma mensagem ao usuário informando se
+// a resposta está correta ou errada. Considere os três países com mais títulos como
+// sendo BRASIL, ITÁLIA E ALEMANHA. (Dica: tente utilizar um switch sem breaks).
+// let opcao = window.prompt('Qual dos 3 paises tem mais titulos na copa do mundo? \n 1 - Brasil \n 2 - Alemanha \n 3- Italia');
+// switch (parseInt(opcao)) {
+//   case 1:
+//     document.write('<h1>Certo!</h1>');
+//     break;
+//   case 2:
+//   case 3:
+//     document.write('<h3>Errado!</h3>');
+//     break;
+//   default:
+//     document.write('<h1>Tente denovo!</h1>');
+//     break
+// }
+// ****************
+// EXERCICIO 16
+// ****************
+// Escreva um script que solicite um número para o usuário e em seguida escreva
+// uma mensagem informando se o número informado é múltiplo de 5. Para que
+// um número seja múltiplo de 5, ele deve ser maior ou igual a 5 e o resto da divisão
+// por 5 deve ser igual a zero.
+// let num = parseInt(window.prompt('Digite um número:'));
+// if(num >= 5 && num %5 ===0){
+//   document.write('<h1>'+num +' é multiplo de 5</h1>');
+// }else {
+//   document.write('<h1>'+num+' não é multiplo de 5</h1>');
+// }
+// ****************
+// EXERCICIO 16
+// ****************
+// 20. Escreva um script que solicite as 3 notas de um aluno e em seguida calcule o
+// valor da média das notas. Caso a média seja maior ou igual a 9 escreva a
+// mensagem “Conceito A”, caso a nota seja menor que 9 e maior ou igual a 7
+// escreva a mensagem “Conceito B”, caso a nota seja menor que 7 e maior ou igual
+// a 5 escreva a mensagem “Conceito C”, se a nota for menor que 5 escreva a
+// mensagem “Conceito Insuficiente”;
+let nota1 = parseFloat(window.prompt('Digite o valor da primeira nota'));
+let nota2 = parseFloat(window.prompt('Digite o valor da segunda nota'));
+let nota3 = parseFloat(window.prompt('Digite o valor da terceira nota'));
+let media = (nota1 + nota2 + nota3) / 3;
+console.log(media);
+if(media >= 9){
+  document.write('<h1>Conceito A</h1>');
+} else if( media >= 7 && media < 9){
+  document.write('<h1>Conceito B</h1>');
+} else if(media< 7 && media >5){
+  document.write('<h1>Conceito C</h1>');
+} else{
+  document.write('<h1>Conceito Insuficiente</h1>');
+}
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>
