@@ -6,7 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Flex Grow</title>
   <style>
-  .container{
+    body, html{
+      height: 100%;
+      width: 100%;
+      padding: 0px;
+    }
+    body{
+      background-image: url(https://images.unsplash.com/photo-1516541196182-6bdb0516ed27?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+      background-repeat: repeat-x;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  /* .container{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -23,14 +36,23 @@
   .block:nth-child(2):hover{
     align-self: flex-end;
    
+  } */
+  .photo{
+    width: 200px;
+    height: 200px;
+    background-image: url(https://images.unsplash.com/photo-1496715976403-7e36dc43f17b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    background-position: center center;
+    border-radius: 50%;
   }
   </style>
 </head>
 <body>
-  <div class="container">
+  <!-- <div class="container">
     <div class="block">1</div>
     <div class="block">2</div>
     <div class="block">3</div>
-  </div>
+    
+  </div> -->
+  <div class="photo"></div>
 </body>
 </html>
