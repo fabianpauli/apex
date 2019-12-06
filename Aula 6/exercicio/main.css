@@ -1,0 +1,108 @@
+
+html, body{
+  padding: 0px;
+  margin: 0px;
+  background-color: #e1e0e0;
+  font-family: Helvetica;
+  color: #3d3d3d;
+}
+body{
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  box-shadow: 0 2px 0 0 rgba(169, 169, 169, 0.5);
+  background-color: #ffffff;
+  padding: 10px 10px;
+  height: 50px;
+  color: black;
+}
+
+header h1 {
+  margin: 0px;
+  line-height: 43px;
+  font-size: 36px;
+  font-weight: bold;
+}
+.feed{
+  position: relative;
+  top:60px;
+  padding: 12px 9px;
+  
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  min-height: 60px ;
+  padding: 6px 11px;
+  background-color: #fff;
+  border-radius: 4px;
+  flex-wrap: wrap;
+  
+ 
+  
+}
+.feed .box .info-head{
+  display: flex;
+  flex: 1;
+  flex-wrap: nowrap;
+  margin: 0;
+  flex-direction: row;
+  align-content: flex-start ;
+}
+
+.feed .box .info-head .avatar{
+  flex: 1;
+  box-shadow: 0px 0px 3px #ccc;
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0px;
+}
+.box .info-head .avatar img{
+  width: 100%;
+}
+
+.box .info-head .info {
+  flex: 2;
+  margin: 5px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+   
+}
+
+
+.info-head .info .username{
+  justify-content: stretch;
+  height: 25px;  
+  font-size: 18px;
+  font-weight: bold;
+
+}
+
+.info-head .info .date{
+  height: 13px;
+  font-size: 11px;
+  font-weight: 300;
+}
+
+.box .post{
+  flex-wrap: wrap;
+  width: 80%;
+  margin-left: 20px;
+}
+hr .line{
+  border-bottom: 1px dotted #8c8b8b;
+}
