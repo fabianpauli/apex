@@ -61,15 +61,16 @@ header h1 {
 
 .feed .box .info-head .avatar{
   flex: 1;
-  box-shadow: 0px 0px 3px #ccc;
+ 
+  overflow: hidden;
+  
+}
+.box .info-head .avatar img{
+ 
   width: 47px;
   height: 47px;
   border-radius: 50%;
-  overflow: hidden;
-  margin: 0px;
-}
-.box .info-head .avatar img{
-  width: 100%;
+  box-shadow: 0px 0px 3px #ccc;
 }
 
 .box .info-head .info {
