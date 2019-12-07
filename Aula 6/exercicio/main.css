@@ -37,7 +37,7 @@ header h1 {
   padding: 12px 9px;
   
 }
-.box{
+.feed .box{
   display: flex;
   flex-direction: column;
   margin-top: 20px;
@@ -46,9 +46,7 @@ header h1 {
   background-color: #fff;
   border-radius: 4px;
   flex-wrap: wrap;
-  
- 
-  
+    
 }
 .feed .box .info-head{
   display: flex;
@@ -57,12 +55,15 @@ header h1 {
   margin: 0;
   flex-direction: row;
   align-content: flex-start ;
+  border-bottom: solid 1px #e1e0e0;
+  padding: 5px 20px; 
 }
 
 .feed .box .info-head .avatar{
   flex: 1;
- 
+ padding-left: 25px;
   overflow: hidden;
+  padding-top: 6px;
   
 }
 .box .info-head .avatar img{
@@ -86,7 +87,7 @@ header h1 {
 
 
 .info-head .info .username{
-  justify-content: stretch;
+  
   height: 25px;  
   font-size: 18px;
   font-weight: bold;
@@ -94,16 +95,32 @@ header h1 {
 }
 
 .info-head .info .date{
+  margin-top: 15px;
   height: 13px;
   font-size: 11px;
   font-weight: 300;
 }
 
 .box .post{
-  flex-wrap: wrap;
-  width: 80%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 20px;
+  flex: 4;
+  border-bottom: solid 1px #e1e0e0;
+
+}
+
+.box .react{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.box .react span{
   margin-left: 20px;
 }
-hr .line{
-  border-bottom: 1px dotted #8c8b8b;
+
+.box .react button{
+  margin-right: 20px;
+  background: #fff;
 }
