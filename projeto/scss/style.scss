@@ -1,0 +1,201 @@
+html, body{
+    color: gray;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+   
+}
+
+.baseHeader{
+
+    width: 100%;
+    height: 40px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+    background-color: #353535;
+
+
+     .navItens{
+
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        
+
+        li{
+
+            font-size: 12px;
+            margin: 10px 13px;
+
+        }
+        
+    }
+}
+
+.navbar{
+    height: 98px;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: bold;
+    color: #636363;
+    text-transform: uppercase;
+  
+     .navbar-collapse {
+        display: flex;
+        justify-content: flex-end;
+            
+    }
+
+      
+}
+
+
+.frontImg{
+    background-image: url(https://images.unsplash.com/photo-1565966245341-5a3f55bbf545?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+    width: 100%;
+    height: 410px;
+    opacity: 0.90;
+    
+     .searchBox{
+        width: 356px;
+        background: #127bbe;
+        height: 410px;
+        color: #ffffff;             
+        font-size: 24px;
+        font-weight: 300; 
+        
+        .boxHeader{
+            height: 33px;
+            
+            h4{    
+                height: 18px;    
+                font-size: 13px;
+                
+            }
+        }
+
+        .card{
+            margin: 88px 45px;
+            color: #636363;
+            font-size: 14px;
+            width: 300px;
+            border-radius: 3px;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+
+            label input{
+                margin: 20px 15px;
+                width: 270px;
+                height: 45px;
+                color: #d3dde0;
+
+            }
+
+            label p{
+                color: #636363;
+                font-size: 12px;
+              }
+        }
+    }
+}
+
+.productsInfo{
+    font-family: OpenSans;
+    font-weight: 300;
+    text-align: center;
+    color: #5a5956;
+    label{
+        width: 259px;
+        height: 33px;
+        font-size: 24px;
+      }
+
+      p {
+        width: 365px;
+        height: 38px;        
+        font-size: 14px;
+        color: #4a4a4a;
+      }
+}
+
+.products {
+display: grid;
+grid-template-columns: 256px 256px 256px 256px 256px;
+grid-template-rows: 256px 256px;
+grid-template-areas: 
+    " . main main main . "
+    " . main main main . "
+;
+
+    .cartao{
+        margin-left: 256px;
+        width: 255px;
+        height: 256px;
+        border: solid 1px #d3dde0;
+        background-color: #f1f4f5;
+        font-size: 17px;
+        grid-area: main;
+        
+          
+        .logoBox{
+            width: 62px;
+            height: 63px;
+            border-radius: 5px;
+            background-color: #127bbe;
+            margin: 20px 97px;
+
+            label{
+                margin: 10px 10px;
+                font-size: 35px;
+                color: #f1f4f5;
+              }
+            
+          }
+
+
+        .cardBody {
+            
+            color: #5a5956;
+
+
+            .cardTitle{
+                align-self: center;
+                font-size: 17px;
+                min-width: 230px;
+            }
+
+            .cardText{
+                margin: 0 16px 7px 16px;
+                width: 224px;
+                height: 57px;
+                font-family: OpenSans;
+                font-size: 14px;
+                text-align: center;
+                color: #5a5956;
+            }
+            }
+
+        
+
+        .learnMore{
+            width: 85px;
+            height: 19px;
+            font-family: sans-serif;
+            font-size: 14px;
+            text-align: center;
+            color: #127bbe;
+            margin: 22px 73px;
+            
+        }
+
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
