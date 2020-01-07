@@ -78,17 +78,15 @@ html, body {
 
 .products {
   display: grid;
-  grid-template-columns: 256px 256px 256px 256px 256px;
+  grid-template-columns: 256px 256px 256px;
   grid-template-rows: 256px 256px;
-  grid-template-areas: " . main main main . " " . main main main . "; }
+  align-self: center;
+  margin: 40px 256px; }
   .products .cartao {
-    margin-left: 256px;
-    width: 255px;
-    height: 256px;
     border: solid 1px #d3dde0;
     background-color: #f1f4f5;
     font-size: 17px;
-    grid-area: main; }
+    align-content: center; }
     .products .cartao .logoBox {
       width: 62px;
       height: 63px;
