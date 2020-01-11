@@ -2,13 +2,15 @@ html, body {
   color: gray;
   margin: 0;
   padding: 0;
-  background: #ffffff; }
+  background: #ffffff;
+  font-family: Arial, Helvetica, sans-serif; }
 
 .baseHeader {
   width: 100%;
   height: 40px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
-  background-color: #353535; }
+  background-color: #353535;
+  color: #fff; }
   .baseHeader .navItens {
     list-style-type: none;
     display: flex;
@@ -32,7 +34,10 @@ html, body {
   background-image: url(https://images.unsplash.com/photo-1565966245341-5a3f55bbf545?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
   width: 100%;
   height: 410px;
-  opacity: 0.90; }
+  opacity: 0.90;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 100px; }
   .frontImg .searchBox {
     width: 356px;
     background: #127bbe;
@@ -41,17 +46,22 @@ html, body {
     font-size: 24px;
     font-weight: 300; }
     .frontImg .searchBox .boxHeader {
+      padding-top: 25px;
+      padding-left: 25px;
       height: 33px; }
       .frontImg .searchBox .boxHeader h4 {
+        padding-top: 2px;
         height: 18px;
         font-size: 13px; }
     .frontImg .searchBox .card {
-      margin: 88px 45px;
+      margin: 60px 28px;
       color: #636363;
       font-size: 14px;
       width: 300px;
       border-radius: 3px;
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05); }
+      .frontImg .searchBox .card ul {
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05); }
       .frontImg .searchBox .card label input {
         margin: 20px 15px;
         width: 270px;
@@ -59,17 +69,19 @@ html, body {
         color: #d3dde0; }
       .frontImg .searchBox .card label p {
         color: #636363;
-        font-size: 12px; }
+        font-size: 12px;
+        padding-left: 15px; }
 
 .productsInfo {
-  font-family: OpenSans;
+  display: flex;
   font-weight: 300;
-  text-align: center;
+  flex-wrap: nowrap;
+  justify-content: center;
   color: #5a5956; }
-  .productsInfo label {
-    width: 259px;
+  .productsInfo .serviceProd {
     height: 33px;
-    font-size: 24px; }
+    font-size: 24px;
+    margin-bottom: 20px; }
   .productsInfo p {
     width: 365px;
     height: 38px;
@@ -81,7 +93,7 @@ html, body {
   grid-template-columns: 256px 256px 256px;
   grid-template-rows: 256px 256px;
   align-self: center;
-  margin: 40px 256px; }
+  justify-content: center; }
   .products .cartao {
     border: solid 1px #d3dde0;
     background-color: #f1f4f5;
@@ -100,14 +112,13 @@ html, body {
     .products .cartao .cardBody {
       color: #5a5956; }
       .products .cartao .cardBody .cardTitle {
-        align-self: center;
         font-size: 17px;
-        min-width: 230px; }
+        min-width: 230px;
+        justify-self: center; }
       .products .cartao .cardBody .cardText {
         margin: 0 16px 7px 16px;
         width: 224px;
         height: 57px;
-        font-family: OpenSans;
         font-size: 14px;
         text-align: center;
         color: #5a5956; }
@@ -119,3 +130,33 @@ html, body {
       text-align: center;
       color: #127bbe;
       margin: 22px 73px; }
+
+.belowInfo {
+  margin-top: 40px;
+  height: 498px;
+  background-color: #f1f4f5;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-evenly;
+  color: #5a5956; }
+  .belowInfo div h3 {
+    height: 33px;
+    font-size: 24px; }
+  .belowInfo div p {
+    width: 300px;
+    height: 125px;
+    font-size: 14px;
+    line-height: 1.79;
+    text-align: center;
+    color: #5a5956; }
+  .belowInfo .belowInfo-header {
+    margin-top: 40px;
+    grid-column: 1 / 6;
+    text-align: center; }
+    .belowInfo .belowInfo-header h3 {
+      height: 33px;
+      font-size: 24px; }
+    .belowInfo .belowInfo-header p {
+      height: 57px;
+      font-size: 14px;
+      text-align: center; }
