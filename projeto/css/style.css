@@ -1,9 +1,18 @@
-html, body {
+html,
+body {
   color: gray;
   margin: 0;
   padding: 0;
   background: #ffffff;
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: "Open Sans", sans-serif; }
+
+h3 {
+  height: 33px;
+  font-size: 24px; }
+
+p {
+  font-size: 14px;
+  line-height: 1.79; }
 
 .baseHeader {
   width: 100%;
@@ -14,7 +23,8 @@ html, body {
   .baseHeader .navItens {
     list-style-type: none;
     display: flex;
-    justify-content: flex-end; }
+    justify-content: flex-end;
+    padding-right: 90px; }
     .baseHeader .navItens li {
       font-size: 12px;
       margin: 10px 13px; }
@@ -26,15 +36,16 @@ html, body {
   font-weight: bold;
   color: #636363;
   text-transform: uppercase; }
-  .navbar .navbar-collapse {
-    display: flex;
-    justify-content: flex-end; }
+  .navbar .navbar-nav {
+    width: 100%;
+    justify-content: flex-end;
+    padding-right: 90px; }
 
 .frontImg {
   background-image: url(https://images.unsplash.com/photo-1565966245341-5a3f55bbf545?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
   width: 100%;
   height: 410px;
-  opacity: 0.90;
+  opacity: 0.9;
   display: flex;
   justify-content: flex-end;
   padding-right: 100px; }
@@ -42,14 +53,16 @@ html, body {
     width: 356px;
     background: #127bbe;
     height: 410px;
-    color: #ffffff;
-    font-size: 24px;
-    font-weight: 300; }
+    color: #ffffff; }
     .frontImg .searchBox .boxHeader {
       padding-top: 25px;
       padding-left: 25px;
       height: 33px; }
+      .frontImg .searchBox .boxHeader h3 {
+        font-weight: 300;
+        font-size: 24px; }
       .frontImg .searchBox .boxHeader h4 {
+        font-weight: 300;
         padding-top: 2px;
         height: 18px;
         font-size: 13px; }
@@ -79,7 +92,8 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #5a5956; }
+  color: #5a5956;
+  margin-top: 37px; }
   .productsInfo .serviceProd {
     height: 33px;
     font-size: 24px;
@@ -87,10 +101,11 @@ html, body {
   .productsInfo p {
     width: 365px;
     height: 38px;
-    font-size: 14px;
-    color: #4a4a4a; }
+    color: #4a4a4a;
+    text-align: center; }
 
 .products {
+  margin-top: 47px;
   display: grid;
   grid-template-columns: 256px 256px 256px;
   grid-template-rows: 256px 256px;
@@ -112,7 +127,8 @@ html, body {
         font-size: 35px;
         color: #f1f4f5; }
     .products .cartao .cardBody {
-      color: #5a5956; }
+      color: #5a5956;
+      text-align: center; }
       .products .cartao .cardBody .cardTitle {
         font-size: 17px;
         min-width: 230px;
@@ -135,30 +151,24 @@ html, body {
 
 .belowInfo {
   margin-top: 40px;
-  height: 498px;
+  height: 458px;
   background-color: #f1f4f5;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: space-evenly;
   color: #5a5956; }
-  .belowInfo div h3 {
-    height: 33px;
-    font-size: 24px; }
-  .belowInfo div p {
-    width: 300px;
-    height: 125px;
-    font-size: 14px;
-    line-height: 1.79;
-    text-align: center;
-    color: #5a5956; }
   .belowInfo .belowInfo-header {
-    margin-top: 40px;
-    grid-column: 1 / 6;
-    text-align: center; }
-    .belowInfo .belowInfo-header h3 {
-      height: 33px;
-      font-size: 24px; }
+    padding-top: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
     .belowInfo .belowInfo-header p {
-      height: 57px;
-      font-size: 14px;
+      width: 300px;
+      text-align: center;
+      color: #5a5956; }
+  .belowInfo .cardsPai {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%; }
+    .belowInfo .cardsPai .cardsInfo {
+      width: 300px;
       text-align: center; }
