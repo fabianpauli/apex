@@ -1,0 +1,16 @@
+$theme-colors: (
+    primary:#d90000,
+    danger: #fcff36,
+    secondary: #9220f0ee
+);
+
+
+
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+
+body{
+    background-color: lightcyan;
+}
